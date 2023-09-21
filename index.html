@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Calculator</title>
+</head>
+<body>
+    <h1>MATH CALCULATOR</h1>
+    <div class="calculator">
+        <div>
+            <h2>Fibonacci Series</h2>
+            <label for="fibonacciInput">Calculate the Fibonacci Series:</label>
+            <input type="number" id="fibonacciInput" placeholder="type amount of series">
+            <button onclick="calculateFibonacci()">Result</button>
+            <p id="fibonacciResult"></p>
+        </div>
+        <div>
+            <h2>Calculating The Volume of A Geometric Shape</h2>
+            <label for="shape">Select The Shape</label>
+            <select id="shape">
+                <option value="cube">Cube</option>
+                <option value="cuboid">Cuboid</option>
+                <option value="cylinder">Tube/Cylinder</option>
+                <option value="sphere">Sphere</option>
+                <option value="cone">Cone</option>
+            </select>
+            <div id="shapeInputs">
+                <label for="side">Side (cm):</label>
+                <input type="number" id="side" placeholder="type here">
+                <label for="length">Lenght (cm):</label>
+                <input type="number" id="length" placeholder="type here">
+                <label for="wide">Wide (cm):</label>
+                <input type="number" id="wide" placeholder="type here">
+                <label for="height">Height (cm):</label>
+                <input type="number" id="height" placeholder="type here">
+                <label for="radius">Radius (cm):</label>
+                <input type="number" id="radius" placeholder="type here">
+            </div>
+            <button onclick="countVolume()">Result</button>
+            <p id="volumeResult"></p>
+        </div>
+    </div>
+    <script src="fibonacciSeries.js"></script>
+
+</body>
+</html>
